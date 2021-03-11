@@ -13,7 +13,7 @@ const navLinks = [
   },
   {
     title: 'About us',
-    path: '/contact-us'
+    path: '/about-us'
   },
   {
     title: 'Login',
@@ -36,7 +36,7 @@ export default function Nav({user}) {
         </ul>
         <span>
         <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} />
-        <span>{`${user.firstName} ${user.lastName}`}</span>
+        <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
         </span>
       </div>
     </nav>
