@@ -7,10 +7,16 @@ import PageRenderer from './page-renderer';
 import Nav from './components/Nav.js';
 
 function App() {
+
+  const user = {
+    firstName: 'Cameron',
+    lastName: 'Glowicki'
+  }
+
   return (
     <Router>
     <div className="App">
-      <Nav />
+      <Nav user={user}/>
       <Switch>
         <Route path="/:page" component={PageRenderer} />
         <Route path="/" render= {() => <Redirect to="/home" />} />
