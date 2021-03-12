@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Avatar } from 'antd';
 
@@ -21,7 +21,7 @@ const navLinks = [
   }
 ]
 
-export default function Nav({user}) {
+export default function Nav({ user }) {
   const [menuActive, setMenuActive] = useState(false);
 
   return (
@@ -37,11 +37,11 @@ export default function Nav({user}) {
           }
         </ul>
         <span>
-        <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} />
-        <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
+          <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={38} />
+          <span className="menu-avatar-name">{`${user.firstName} ${user.lastName}`}</span>
         </span>
-        <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)}/>
       </div>
+      <i className="ionicons icon ion-ios-menu" onClick={() => setMenuActive(!menuActive)} />
     </nav>
   );
 }
