@@ -29,6 +29,21 @@
       font-size: 16px;
       margin-left: 10px;
     }
+
+    .ion-ios-menu {
+      font-size: 36px;
+      width: 65px;
+      align-items: center;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media screen and (max-width: 900px) {
+      .ion-ios-menu {
+        display: flex;
+        size: 100px;
+      }
+    }
   }
 
   ul {
