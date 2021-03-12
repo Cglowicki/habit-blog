@@ -37,13 +37,6 @@
       cursor: pointer;
       display: none;
     }
-
-    @media screen and (max-width: 900px) {
-      .ion-ios-menu {
-        display: flex;
-        size: 100px;
-      }
-    }
   }
 
   ul {
@@ -64,6 +57,18 @@
 
       &:hover {
         color: $text-link;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .nav-bar {
+    .menu-content-container {
+
+      .ion-ios-menu {
+        display: flex;
       }
     }
   }
