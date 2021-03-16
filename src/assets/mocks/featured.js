@@ -1,8 +1,6 @@
 import moment from 'moment';
 
-let featured = [];
-
-export default featured [
+export default [
   {
     title:'x',
     date: moment().format('MMMM DD, YYYY'),

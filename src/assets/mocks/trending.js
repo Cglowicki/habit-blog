@@ -1,8 +1,6 @@
 import moment from 'moment';
 
-let trending = [];
-
-export default trending [
+export default [
   {
     title:'x',
     date: moment().format('MMMM DD, YYYY'),
