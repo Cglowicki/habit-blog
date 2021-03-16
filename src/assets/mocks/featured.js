@@ -1,6 +1,8 @@
 import moment from 'moment';
 
-export default [
+let featured = [];
+
+export default featured [
   {
     title:'x',
     date: moment().format('MMMM DD, YYYY'),
@@ -25,4 +27,4 @@ export default [
     link: '#',
     image: '../images/shabs.jpeg'
   }
-]
+];
