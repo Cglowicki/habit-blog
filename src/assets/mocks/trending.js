@@ -29,5 +29,12 @@ export default [
     categories: ['Tech'],
     link: '#',
     image: '../images/shabs.jpeg'
+  },
+  {
+    title:'x',
+    date: moment().format('MMMM DD, YYYY'),
+    categories: ['Tech', 'Brain Health'],
+    link: '#',
+    image: '../images/shabs.jpeg'
   }
 ];
