@@ -66,6 +66,7 @@
 @media screen and (max-width: 900px) {
   .nav-bar {
     .menu-content-container {
+      z-index: 20;
       width: 300px;
       height: calc(100% - 65px);
       background: white;
