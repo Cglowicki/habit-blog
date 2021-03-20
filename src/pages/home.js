@@ -51,12 +51,15 @@ export default function Home() {
           </section>
         </div>
       </section>
+      <section className="bg-white">
       <section className="container">
         <div className="row">
           <h1>Recent Posts</h1>
           <PostGrid  posts={recentPosts} />
         </div>
       </section>
+      </section>
+      
       <section className="container">
         <div className="row">
           <PostMasonry posts={trending} columns={3} />
