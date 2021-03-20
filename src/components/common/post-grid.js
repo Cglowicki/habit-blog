@@ -14,6 +14,14 @@ export default function PostGrid({ posts }) {
     return posts.slice(firstIndex, lastIndex);
   }, [current, pageSize, posts]);
 
+  useEffect (() => {
+    window.scroll({
+      top: 500,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }, [current, pageSize])
+
   return (
     <section className="grid-pagination-container">
       <section className="post-grid conatiner">
@@ -21,7 +29,7 @@ export default function PostGrid({ posts }) {
           <div className="post-container">
             <figure>
               <Link to={post.link}>
-                <img src={require(`../../assets/images/shabs.jpeg`)/* .default */} alt={post.image} />
+                <img src={require(`../../assets/images/shabs.jpeg`).default} alt={post.image} />
               </Link>
             </figure>
             <TagRow tags={post.categories} />
