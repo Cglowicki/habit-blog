@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Pagination } from 'antd';
+import TagRow from './tag-row';
 
 export default function PostGrid({ posts }) {
   const [pageSize, setPageSize] = useState(9);
@@ -23,6 +24,7 @@ export default function PostGrid({ posts }) {
                 <img src={require(`../../assets/images/shabs.jpeg`)/* .default */} alt={post.image} />
               </Link>
             </figure>
+            <TagRow tags={post.categories} />
           </div>
         ))}
       </section>
