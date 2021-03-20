@@ -28,7 +28,7 @@ const featuredConfig = {
 const mergeStyles = function (posts, config) {
   posts.forEach((post, index) => {
     post.style = config[index];
-    post.author = 'Gagan Dodd';
+    post.author = 'G. Dodd';
     post.description = 'Habit Blog is poppin\' off!';
   })
 };
