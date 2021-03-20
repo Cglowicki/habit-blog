@@ -12,12 +12,12 @@ export default function PostGrid({ posts }) {
     const firstIndex = lastIndex - pageSize;
 
     return posts.slice(firstIndex, lastIndex);
-  }, [current, pageSize]);
+  }, [current, pageSize, posts]);
 
   return (
     <section className="grid-pagination-container">
       <section className="post-grid conatiner">
-        {paginatedPosts.map((post, index) =>(
+        {paginatedPosts.map((post, index) => (
           <div className="post-container">
             <figure>
               <Link to={post.link}>
@@ -25,6 +25,22 @@ export default function PostGrid({ posts }) {
               </Link>
             </figure>
             <TagRow tags={post.categories} />
+            <h2>{post.title}</h2>
+            <p className="author-text">
+              <span>
+                By:
+                <Link to={`/authors/${post.author}`}>
+                  {post.author}
+                </Link>
+              </span>
+              <span>
+                - {post.date}
+              </span>
+            </p>
+            <p className="description-text">
+              {post.description}
+            </p>
+            <Link to={post.link}>Read More...</Link>
           </div>
         ))}
       </section>
