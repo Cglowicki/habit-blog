@@ -3,7 +3,7 @@ import {categoryColors} from './styles';
 
 export default function MasonryPost({ post, tagsOnTop }) {
   const windowWidth = window.innerWidth
-  const imageBackground = {backgroundImage: `url("${require(`../../assets/images/shabs.jpeg`)}")`};
+  const imageBackground = {backgroundImage: `url("${require(`../../assets/images/shabs.jpeg`).default}")`};
 
   const style = windowWidth > 900 ? {...imageBackground, ...post.style} : imageBackground;
 

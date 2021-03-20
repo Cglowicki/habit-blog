@@ -20,7 +20,7 @@ export default function PostGrid({ posts }) {
           <div className="post-container">
             <figure>
               <Link to={post.link}>
-                <img src={require(`../../assets/images/shabs.jpeg`)} alt="Shabs" />
+                <img src={require(`../../assets/images/shabs.jpeg`)/* .default */} alt={post.image} />
               </Link>
             </figure>
           </div>
