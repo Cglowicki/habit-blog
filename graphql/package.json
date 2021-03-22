@@ -6,6 +6,12 @@
   "scripts": {
     "test": "test"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Cameron Glowicki",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-koa": "^2.21.2",
+    "graphql-tools": "^7.0.4",
+    "koa": "^2.13.1",
+    "moment": "^2.29.1"
+  }
 }
