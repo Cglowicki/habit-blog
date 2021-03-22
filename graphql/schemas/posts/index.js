@@ -14,5 +14,11 @@ module.exports = {
         ...featuredPosts
       ]
     }
-  }
+  },
+  schema: fs.readFileSync(
+    path.resolve(
+      __dirname,
+      './posts-schema.graphql'
+    )
+  ).toString()
 }
