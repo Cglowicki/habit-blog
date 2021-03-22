@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
-import moment from 'moment';
+const moment = require('moment');
 
-export default [
+module.exports = [
   {
     title:'x',
     date: moment().format('MMMM DD, YYYY'),
