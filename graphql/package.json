@@ -1,0 +1,11 @@
+{
+  "name": "habit-blog-backend",
+  "version": "1.0.0",
+  "description": "Koa and Graphql backend for blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
