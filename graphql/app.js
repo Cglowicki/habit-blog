@@ -11,6 +11,6 @@ const server = new ApolloServer({
 const app = new Koa();
 server.applyMiddleware({ app });
 app.listen({ port: PORT }, () => {
-  console.log(`Server readt at http://localhost:${PORT + server.graphqlPath}`)
+  console.log(`Server ready at http://localhost:${PORT + server.graphqlPath}`)
 });
 
