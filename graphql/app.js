@@ -1,6 +1,7 @@
 const Koa = require('koa');
 const { ApolloServer } = require('apollo-server-koa');
 const { makeExecutableSchema } = require('graphql-tools');
+const { resolvers, typeDefs } = require('./schemas');
 const PORT = 4000;
 
 const server = new ApolloServer({
@@ -12,3 +13,4 @@ server.applyMiddleware({ app });
 app.listen({ port: PORT }, () => {
   console.log(`Server readt at http://localhost:${PORT + server.graphqlPath}`)
 });
+
