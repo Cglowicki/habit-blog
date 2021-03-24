@@ -4,7 +4,8 @@
   "description": "Koa and Graphql backend for blog",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "create-migration": "node ./database/actions/create-migration.js"
   },
   "author": "Cameron Glowicki",
   "license": "ISC",
