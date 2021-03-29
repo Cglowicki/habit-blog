@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS {}.blog_posts (
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   INDEX bpauthor_ind (author_id),
   CONSTRAINT fk_bpauthor FOREIGN KEY (author_id)
-  REFERENCES users(id),
-  ON DELETE CASCADE,
+  REFERENCES users(id)
+  ON DELETE CASCADE
   ON UPDATE CASCADE
 );
