@@ -16,7 +16,7 @@ VALUES
 
 INSERT INTO users(role_id, email, first_name, last_name)
 VALUES
-(1, 'camglowicki@hotmail.com', Cameron, Glowicki);
+(1, 'camglowicki@hotmail.com', 'Cameron', 'Glowicki');
 
 INSERT INTO blog_categories(label, description)
 VALUES
