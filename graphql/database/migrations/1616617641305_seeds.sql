@@ -5,7 +5,7 @@ VALUES
 
 INSERT INTO permissions(action)
 VALUES
-('post')
+('post'),
 ('manage-users');
 
 INSERT INTO roles_permissions(role_id, permission_id)
