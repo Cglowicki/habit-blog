@@ -32,5 +32,4 @@ VALUES
 
 INSERT INTO blog_post_categories(post_id, category_id)
 VALUES
-(1, 4);
--- TROUBLE HERE --
+(1, 1);
